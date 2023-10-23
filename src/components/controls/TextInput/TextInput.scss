@@ -235,6 +235,8 @@ $block: '.#{variables.$ns}text-input';
 
                 &:focus-within {
                     border-color: var(--g-color-line-generic-active);
+                    outline: 2px solid var(--g-color-line-focus);
+                    outline-offset: -1px;
                 }
             }
         }

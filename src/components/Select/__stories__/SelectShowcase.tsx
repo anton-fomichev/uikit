@@ -350,6 +350,20 @@ export const SelectShowcase = (props: SelectProps) => {
                 <Select.Option value="val3" content="Value3" />
                 <Select.Option value="val4" content="Value4" />
             </ExampleItem>
+            <ExampleItem
+                title="Select with error"
+                code={[EXAMPLE_JSON_OPTIONS, EXAMPLE_CHILDREN_OPTIONS]}
+                selectProps={{
+                    ...props,
+                    popupClassName: b('custom-popup'),
+                    error: 'Error text',
+                }}
+            >
+                <Select.Option value="val1" content="Value1" />
+                <Select.Option value="val2" content="Value2" />
+                <Select.Option value="val3" content="Value3" />
+                <Select.Option value="val4" content="Value4" />
+            </ExampleItem>
         </div>
     );
 };

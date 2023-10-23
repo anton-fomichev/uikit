@@ -122,6 +122,8 @@ $block: '.#{variables.$ns-new}text-area';
 
                 &:focus-within {
                     border-color: var(--g-color-line-generic-active);
+                    outline: 2px solid var(--g-color-line-focus);
+                    outline-offset: -1px;
                 }
             }
         }
